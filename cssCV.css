@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;    
 }
+
 .header-container {
     padding-top: 2em;
     display: flex;
@@ -96,7 +97,7 @@ body {
     font-style: normal;
 font-weight: normal;
 font-size: 1em;
-line-height: 1.2em;
+line-height: 1.35em;
 padding-left: 2.5em;
 }
 .big-water-bottle {
@@ -107,7 +108,7 @@ padding-left: 2.5em;
     transition: 1s linear;
     transition-property: transform;
 }
-.order-button {
+button {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
        -khtml-user-select: none;
@@ -126,7 +127,7 @@ padding-left: 2.5em;
       border-radius: 0.3em;
       box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
       background: rgb(2,0,36);
-    background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
       background-size: 180%;
       background-position: right;
       transition: 1s;
@@ -138,12 +139,14 @@ padding-left: 2.5em;
       background-position: left;
       color: white;
       box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
-  }
+    transform: scale(1.3);
+    }
   
   button:focus {
       outline: none;
   }
 .block-of-advantages > div {
+    text-align: center;
     width: 3em;
     height: 3em;
     background: #FFFFFF;
@@ -159,6 +162,8 @@ padding-left: 2.5em;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 4em;
+    text-align: center;
+    
 }
 .block-of-advantages p {
     margin-top: 5em;
@@ -203,4 +208,135 @@ padding-left: 2.5em;
 .drop-water img:hover {
     transform: rotate(50deg);
 }
+.header-container-phone {
+    display: none;
+}
 
+@media only screen and (max-width: 600px) {
+    .header-container-phone {
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        align-content: stretch;
+        color: #FFFFFF;
+        background-color: #2a2a72;    
+    }
+    .header-container-phone > div {
+        flex-direction: 50%;
+    }
+    .header-company-phone-invisible {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.3em;
+        padding-left: 0em;
+        }
+        .header-company-phone-invisible p {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.7em;
+        line-height: 1.2em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        opacity: 0.56;
+        }
+        .header-company-sum-invisible {
+            font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+        }
+    .drop-water img {
+        left: 23em;        
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }    
+    .header-name-company {    
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        padding-bottom: 1em;
+        text-align: center;
+        padding-right: 1em;
+    }
+    .drop-water-container {
+        display: none;
+    }
+    .header-navigator {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .header-navigator > div {
+        flex: 100%;
+    }
+    .header-navigator a {
+        font-size: 2em;
+        line-height: 1.35em;
+        padding-bottom: 1em;
+        width: 100%;
+        margin-right: 0.2em;
+        text-align: center;
+
+    }
+    .header-navigator a:hover {
+        font-size: 2em;
+        line-height: 1.35em;
+    }
+    .below-the-header-container-texts h2 {
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+    .below-the-header-container-texts p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.35em;
+    padding-left: 1.5em;
+    }
+    .big-water-bottle img {
+        width: 50%;
+        padding-top: 5em;    
+        margin-left: 7em;
+    }
+    .big-water-bottle img:hover {
+        transform: rotate(15deg);
+    }
+    button {
+        width: 100%;
+        margin-left: 0;
+        padding: 1em 0em;
+        font-size: 1.3em;
+    }
+    button:hover {
+        transform: scale(0.9);
+
+    }
+    .below-the-header-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }    
+    .header-company-sum-one {
+        font-size: 5em;
+        visibility: visible;
+    }
+    .header-company-phone {
+        display: none;
+    }
+    .header-company-sum {
+        display: none;
+    }
+    }

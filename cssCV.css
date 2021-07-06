@@ -360,7 +360,28 @@ button {
     }
 
     @media only screen and (max-width: 400px) {
-
+        .below-the-header-container-texts h2 {
+            font-weight: 700;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .below-the-header-container-texts p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.35em;
+        padding-left: 1.5em;
+        text-align: center;
+        }
+        .header-navigator a {
+            font-size: 3em;
+            line-height: 1.35em;
+            padding-bottom: 1em;
+            width: 100%;
+            margin-right: 0.2em;
+            text-align: center;
+    
+        }
     }
     
 

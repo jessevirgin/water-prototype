@@ -207,15 +207,7 @@ button {
     display: none;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 1000px){
-    @keyframes drop-water {
-        0%   {top:0em;}
-        1% {opacity: 1;}
-        100% {top:20em; opacity: 0}
-    }    
-}
-
-@media screen and (max-width: 600px) and (min-width: 200px) {
+@media screen and (max-width: 600px) {
     .header-container-phone {
         padding-top: 2em;
         display: flex;
@@ -358,6 +350,15 @@ button {
             display: none;
         }        
     }
+
+    
+@media screen and (max-width: 1024px) and (min-width: 1000px){
+    @keyframes drop-water {
+        0%   {top:0em;}
+        1% {opacity: 1;}
+        100% {top:20em; opacity: 0}
+    }    
+}
 
     
 

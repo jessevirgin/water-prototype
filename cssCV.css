@@ -207,7 +207,7 @@ button {
     display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 813px) {
     .header-container-phone {
         padding-top: 2em;
         display: flex;

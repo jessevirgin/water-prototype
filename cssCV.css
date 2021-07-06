@@ -302,6 +302,7 @@ button {
     .below-the-header-container-texts h2 {
         font-weight: 700;
         font-size: 1.5em;
+        text-align: center;
     }
     .below-the-header-container-texts p {
     font-style: normal;
@@ -309,6 +310,7 @@ button {
     font-size: 1em;
     line-height: 1.35em;
     padding-left: 1.5em;
+    text-align: center;
     }
     .big-water-bottle img {
         width: 50%;
@@ -357,5 +359,8 @@ button {
         }        
     }
 
+    @media only screen and (max-width: 400px) {
+
+    }
     
 

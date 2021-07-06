@@ -359,7 +359,7 @@ button {
         }        
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 400px) and (min-width: 600px) {
         .below-the-header-container-texts h2 {
             font-weight: 700;
             font-size: 1.5em;

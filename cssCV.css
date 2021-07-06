@@ -359,3 +359,14 @@ button {
         100% {top:20em; opacity: 0}
     }    
 }
+@media screen and (min-width: 1024px) {
+    .big-water-bottle {
+        flex: 1.1em;
+    }
+    .big-water-bottle img {
+        width: 50%;
+        transition: 1s linear;
+        transition-property: transform;
+    }
+    
+}

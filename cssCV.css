@@ -207,7 +207,7 @@ button {
     display: none;
 }
 
-@media screen and (max-width: 813px) {
+@media only screen and (max-width: 992px){
     .header-container-phone {
         padding-top: 2em;
         display: flex;
@@ -312,9 +312,30 @@ button {
     .big-water-bottle img:hover {
         transform: rotate(15deg);
     }
+    .block-of-advantages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 4em;
+        text-align: center;
+        justify-content:space-around;
+        align-items: stretch;
+    } 
+    .big-water-bottle img {
+        margin-left: 0em;
+    }
+    .big-water-bottle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     button {
-        width: 100%;
-        margin-left: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 90%;
         padding: 1em 0em;
         font-size: 1.3em;
     }

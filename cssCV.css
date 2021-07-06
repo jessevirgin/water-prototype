@@ -212,7 +212,7 @@ button {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 900px) and (min-width: 600px) {
     .header-container-phone {
         padding-top: 2em;
         display: flex;
@@ -294,6 +294,7 @@ button {
     .header-navigator a:hover {
         font-size: 2em;
         line-height: 1.35em;
+        padding: 0.5em 0.5em;
     }
     .below-the-header-container-texts h2 {
         font-weight: 700;
@@ -339,4 +340,19 @@ button {
     .header-company-sum {
         display: none;
     }
+       }
+
+    @media only screen and (max-width: 768px) {  
+        .drop-water-container {
+            display: none;
+        }        
     }
+
+    @media only screen and (max-width: 992px) {  
+        .drop-water-container {
+            display: none;
+        }        
+    }
+
+    
+

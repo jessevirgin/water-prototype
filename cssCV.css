@@ -360,13 +360,26 @@ button {
     }    
 }
 @media screen and (min-width: 1024px) {
-    .big-water-bottle {
-        flex: 1.1em;
-    }
     .big-water-bottle img {
         width: 50%;
-        transition: 1s linear;
+    }
+    .drop-water img {
+        width: 2%;
+        animation-name: drop-water;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 96.5em;
+        opacity: 0;
+        transition: 0.1s linear;
         transition-property: transform;
     }
+    
+    @keyframes drop-water {
+        0%   {top:0em;}
+        1% {opacity: 1;}
+        100% {top:20em; opacity: 0}
+    }    
+
     
 }

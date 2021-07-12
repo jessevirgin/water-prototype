@@ -3,7 +3,8 @@
     }  
     body {
         margin: 0;
-        font-family: 'Raleway', sans-serif;    
+        font-family: 'Raleway', sans-serif;   
+            font-feature-settings: 'pnum' on, 'lnum' on;
     }
     
     .header-container {
@@ -127,7 +128,7 @@
           border-radius: 0.3em;
           box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
           background: rgb(2,0,36);
-            background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+          background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
           background-size: 180%;
           background-position: right;
           transition: 1s;
@@ -207,8 +208,88 @@
     .header-container-phone {
         display: none;
     }
-    
+
+    .order-container {
+        margin-left: 2.2em;
+    }
+    .order-container p {
+        text-align: left;
+        font-weight: 900;
+        color: #233A5C;
+        padding-left: 1em;
+    }
+    .select-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-weight: 500;
+        font-size: 1em;
+        color: black;
+        padding-left: 1em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .select-container > div {
+        margin-left: 3em;
+        padding: 0em 1em;
+        transition: 0.2s linear;
+    }
+    .select-container > div:hover {
+        border: 0.1em solid #009ffd;
+        border-radius: 1em;
+        font-size: 1.1em;
+       }
+    .select-container .select-water {
+        margin-left: 0em;
+    }
+    .order-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 3em;
+        align-items: stretch;
+    }
+    .order-cards .product-card img {
+        padding: 2em;
+        width: 100%;
+    }
+    .order-cards > div {
+        width: 15%;
+        margin-left: 2em;
+    }
+    .product-card {
+        margin-bottom: 1em;
+        transition: 1s linear;
+        border-radius: 1em;
+    }
+   .order-cards .product-card {
+        border: 0.1em solid #009ffd;
+    }
+    .product-card-price {
+        color: #989898;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1em;
+        text-decoration-line: line-through;
+        margin-left: 1em;
+    }
+    .product-card p {
+        color: #0C50FF;
+        margin-top: 0em;
+    }
+    .order-cards .full-card .name-of-the-product{
+        font-size: 0.9em;
+        color:  #153FA9;
+        font-style: normal;
+        font-weight: 800;        
+    }
+    .product-card:hover {
+        width: 105%;
+    }
     @media only screen and (max-width: 992px){
+        body {
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
         .header-container-phone {
             padding-top: 2em;
             display: flex;
@@ -254,8 +335,13 @@
             justify-content:center;
             align-items: center;
             text-align: center;
-        }    
-        .header-name-company {    
+            }    
+            .header-container > div {
+                line-height: 1.2em;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                flex: 1em;
+            }
+                .header-name-company {    
             font-style: normal;
             font-weight: bold;
             font-size: 3em;
@@ -290,7 +376,7 @@
         .header-navigator a:hover {
             font-size: 2em;
             line-height: 1.35em;
-            padding: 0.5em 0.5em;
+            padding: 0.5em 0.5em;            
         }
         .below-the-header-container-texts h2 {
             font-weight: 700;
@@ -378,22 +464,19 @@
                 display: none;
             }        
         }
-    
-        
-    @media screen and (max-width: 1024px) and (min-width: 1000px){
-        @keyframes drop-water {
-            0%   {top:0em;}
-            1% {opacity: 1;}
-            100% {top:20em; opacity: 0}
-        }    
-    }
-    @media screen and (min-width: 1200px) {
+            
+    @media only screen and (min-width: 1200px) {
         .header-name-company {    
             font-style: normal;
             font-weight: bold;
-            font-size: 2em;
+            font-size: 1.5em;
             padding-left: 1em;
         }
+        .header-container > div {
+            line-height: 1.2em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            flex: 1em;
+            }
         .header-navigator {
             flex: 1.1em;
             padding-left: 5.5em;
@@ -414,6 +497,9 @@
             box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
             background: rgb(2,0,36);
             background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        }
+        .header-navigator a:active {
+            box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
         }
         .drop-water img:hover {
             transform: rotate(50deg);
@@ -450,9 +536,6 @@
             justify-content:space-around;
             align-items: stretch;
         } 
-        button {
-            margin-left: 22em;
-        }
         
         .big-water-bottle img {
             width: 50%;
@@ -477,4 +560,5 @@
     
         
     }
-    
+
+ 

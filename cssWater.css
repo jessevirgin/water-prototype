@@ -1,0 +1,1321 @@
+* {
+    box-sizing: border-box;
+    } 
+    ::selection{
+        color: rgb(116, 14, 116);
+    } 
+    body {
+        margin: 0;
+        font-family: 'Raleway', sans-serif;   
+            font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    
+    .header-container {
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        align-content: stretch;
+        color: #FFFFFF;
+        background-color: #2a2a72;
+    }
+    .header-container > div {
+        line-height: 1.2em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        flex: 1em;
+    }
+    .header-name-company {    
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    .header-name-company span {
+        color: #3e8e99;
+    }
+    .header-navigator {
+        flex: 1.1em;
+        padding-left: 0.5em;
+    }
+    .header-navigator a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 0em 0.5em 0em 0em;
+        transition: 0.3s linear;
+    }
+    .header-navigator a:hover {
+        font-size: 1.1em;
+        border-radius: 0.3em;
+        box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        background: rgb(2,0,36);
+        background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+    }
+    .header-navigator a:active {
+        box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+    }
+        
+    .header-company-phone {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        padding-left: 0em;
+        }
+        .header-company-phone p {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.7em;
+        line-height: 1.2em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        opacity: 0.56;
+        }
+    .header-company-sum{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    
+    .below-the-header-container {
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: #FFFFFF;
+        background-color: #2a2a72;
+        background-image: linear-gradient(to bottom, #2a2a72 0%, #009ffd 74%);    padding-top: 10em;
+    }    
+    .below-the-header-container > div {
+        flex: 1.1em;
+    }
+    .below-the-header-container-texts h2 {
+        font-weight: 900;
+        font-size: 2.5em;
+        padding-left: 1em;
+    }
+    .below-the-header-container-texts p {
+        font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.35em;
+    padding-left: 2.5em;
+    }
+    .big-water-bottle {
+        flex: 1.1em;
+    }
+    .big-water-bottle img {
+        width: 100%;
+        transition: 1s linear;
+        transition-property: transform;
+    }
+    .order-button {
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      .order-button {
+          width: 11em;
+          cursor: pointer;
+          border: none;
+          color: rgba(255,255,255,0.5);
+          font-size: 1.1em;
+          border-radius: 0.3em;
+          box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+          background: rgb(2,0,36);
+          background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+          background-size: 180%;
+          background-position: right;
+          transition: 1s;
+          margin-left: 2.2em;
+          margin-top: 2em;
+      }
+      .order-button:hover {
+          background-position: left;
+          color: white;
+          box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+            transform: scale(1.3);
+        }
+        .order-button:active {
+            box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        }   
+      .order-button:focus {
+          outline: none;
+      }
+      .first-section-of-advantages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 4em;
+        text-align: center;    
+    }
+    
+      .first-section-of-advantages > div {
+        text-align: center;
+        width: 3em;
+        height: 3em;
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin-left: 2.5em;
+        opacity: 0.61;
+        margin: 0em 2.4em;
+        transition-property: opacity;
+        transition: 0.6s linear;
+    }
+    .first-section-of-advantages p {
+        margin-top: 5em;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    .first-section-of-advantages .free-shipping:hover {
+        opacity: 1;
+    }
+    .first-section-of-advantages .quality-water:hover {
+        opacity: 1;
+    }
+    .first-section-of-advantages .cooler-service:hover {
+        opacity: 1;
+    }
+    .big-water-bottle img:hover {
+        transform: rotate(-15deg);
+    }
+    .drop-water-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: #2a2a72;
+    }
+    .drop-water img {
+        width: 2%;
+        animation-name: drop-water;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 46.5em;
+        opacity: 0;
+        transition: 0.1s linear;
+        transition-property: transform;
+    }
+    .drop-water img:hover {
+        transform: rotate(50deg);
+    }
+    .header-container-phone {
+        display: none;
+    }
+
+    .order-container {
+        margin-left: 2.2em;
+    }
+    .order-container-header-text {
+        text-align: left;
+        font-weight: 900;
+        color: #233A5C;
+        padding-left: 1.8em;
+    }
+    .select-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-weight: 500;
+        font-size: 1em;
+        color: black;
+        padding-left: 2em;
+        margin-top: 2em;
+        text-align: center;
+        transition: 0.5s linear;
+    }
+    .select-container > div {
+        margin-left: 3em;
+        padding: 0em 1em;
+        transition: 0.2s linear;
+        cursor: pointer;
+        transition: 0.5s linear;
+        border-radius: 1em;
+    }
+    .select-container > div:hover {
+        border: 0.1em solid #009ffd;
+        border-radius: 1em;
+        transform: scale(1.2);
+        color: #009ffd;
+       }
+    .select-container .select-water {
+        margin-left: 0em;
+    }
+    .order-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 3em;
+        align-items: stretch;
+    }
+    .order-cards .product-card img {
+        padding: 2em;
+        width: 100%;
+    }
+    .order-cards > div {
+        width: 15%;
+        margin-left: 2em;
+    }
+    .product-card {
+        margin-bottom: 1em;
+        transition: 1s linear;
+        border-radius: 1em;
+        box-shadow: 0em 1em 2em 0px rgba(0,0,0,0.15);
+    }
+   .order-cards .product-card {
+        border: 0.1em solid #009ffd;
+    }
+    .product-card-price {
+        color: #989898;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1em;
+        text-decoration-line: line-through;
+        margin-left: 1em;
+    }
+    .product-card p {
+        color: #0C50FF;
+        margin-top: 0em;
+        padding-left: 1em;
+        padding-right: 0em;
+    }
+    .order-cards .full-card .name-of-the-product{
+        font-size: 0.9em;
+        color:  #153FA9;
+        font-style: normal;
+        font-weight: 800;     
+    }
+    .product-card:hover {
+        transform: scale(1.1);
+        box-shadow: 0em 1em 2em 0px rgba(0,0,0,0.50);
+    }
+    .new-price-and-quantity {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #0C50FF;
+        font-weight: 800;
+        padding-right: 1em;
+    }
+    .product-card-quantity {
+        cursor: pointer;
+    }
+    .order-form {
+        box-shadow: 0 1em 2em 0em (rgba(0,0,0,0.9));
+    }
+    .order-form-total-sum-text {
+        font-style: normal;
+        font-weight: 600;
+        color: #000000;
+        font-size: 1.3em;
+    }
+    .order-form-total-sum-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #0C50FF;
+    padding-left: 0.3em;
+    }
+    .order-form-select-price-quantity-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.8em;
+        color: black;
+        opacity: 0.5;
+        padding-top: 1em;
+    }
+    .order-form-select-price-quantity-select, .order-form-below-header-product {
+        width: 50%;
+        font-weight: 600;
+        font-size: 1em;
+        color: black;
+        font-style: normal;
+    }
+    .order-form-select-price-quantity-price, .order-form-below-header-price {
+        width: 25%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        color: #0C50FF;
+    }
+    .order-form-select-price-quantity-quantity, .order-form-below-header-quantity {
+        width: 20%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        color: #0C50FF;
+    }
+    .order-form-below-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 800;
+    }
+    .order-form-below-header > div {
+        margin-top: 1em;
+    }
+    .order-form-select-price-quantity-header > div {
+        color: black;
+    }
+    .order-form-middle-line {
+        margin-top: 2em;
+        border-bottom: 0.1em solid rgb(100, 100, 247);
+        margin-bottom: 2em;
+    }
+
+    .order-form-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;align-items: center;
+    }
+    .order-form-bottom > div {
+        padding-bottom: 1em;
+    }
+    .order-form-input input[type=text] {
+        border: 0.1em solid rgba(12,80,255,0.56);
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        box-sizing: border-box;
+        outline: none;
+        transition: 0.5s linear;
+        opacity: 0.8;
+        font-size: 1em;
+    }
+    .order-form-input input[type=text]:hover {
+        opacity: 1;
+        box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.4);
+    }
+    .order-form-input input[type=text]:focus {
+        opacity: 1;
+        border: 0.1em solid rgba(65, 12, 255, 0.56);
+        transform: scale(1.1);
+    }
+    .order-form-bottom-button-style {
+        background: linear-gradient(180deg, #0C50FF 0%, #4B7EFF 100%);
+        border: none;
+        border-radius: 0.5em;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 0.8em;
+        color: #FFFFFF;
+        padding: 1em 7em;
+        transition: 0.5s linear;
+        cursor: pointer;
+    }
+    .order-form-bottom-button-style:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.4);
+    }
+    .order-form-bottom-button-style:active {
+        background: linear-gradient(180deg, #0C50FF 50%, #4B7EFF 100%);  
+        box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.8);
+    }
+
+    .main-promotions-container {
+        padding-left: 4em;
+        margin-top: 10em;
+    }
+    .main-promotions-header-text {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.3em;
+        line-height: 1.35em;
+        color: #233A5C;
+    }
+    .main-promotions-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .main-promotions-flex > div {
+        width: 30%;
+        padding-left: 1em;
+    }
+    .promotion-img {
+        width: 20%; 
+        margin: 2em 0em 0em 3em;     
+        transition: 0.5s linear;  
+    }
+    .promotion-img:hover {
+        opacity: 0.8;
+    }
+    .main-promotions-img-part {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    border-radius: 1em;
+    }   
+    .main-promotions-span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.8em;
+        color: black;
+    }
+    .about-our-company-container {
+        padding-left: 4em;
+        padding-top: 5em;
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    .about-our-company-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-our-company-flex > div {
+        flex: 1.3em;
+    }
+    .about-our-company-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5em;
+        line-height: 2em;
+        color: #233A5C;
+    }
+    .about-our-company-img {
+        width: 50%;
+        transition: 0.5s linear;
+    }
+    .about-our-company-img img {
+        width: 50%;
+        opacity: 0.7;
+        transition: 0.5s linear;
+    }
+    .about-our-company-img img:hover {
+        opacity: 1;
+    }
+    .about-our-company-main-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9em;
+        line-height: 1.35em;
+        color: black;
+        opacity: 0.5;
+    }
+    .about-our-company-title {
+        font-style: normal;
+        font-weight: bold;
+        font-style: 1.5em;
+        line-height: 2em;
+        color: #233A5C;
+    }
+    .how-we-work-container {
+        padding-left: 4em;
+        padding-top: 5em;
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    .how-we-work-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: stretch;
+    }
+    .how-we-work-flex div {
+        flex: 1.3em;
+        padding-right: 3em;
+        height: 100%;
+    }
+    .how-we-work-part {
+        box-shadow: 0em 0.1em 0.9em 0em rgba(0, 0, 0, 0.2);
+        border-radius: 0.5em;
+        padding: 5em 3em;
+        transition: 0.5s linear;
+    }
+    .how-we-work-part:hover {
+        box-shadow: 0em 0.1em 0.9em 0.1em rgba(0, 0, 0, 0.5);
+    }
+    .how-we-work-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.3em;
+        line-height: 1.35em;
+        color: #233A5C;        
+    }
+    .how-we-work-button {
+        border: none;
+        font-size: 1em;
+        color: white;
+        background-color: #2a2a72;
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+        border-radius: 1em;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+    .how-we-work-img-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        border-radius: 1em;
+    }
+    .how-we-work-img-container div {
+        flex: 1.3em;
+    }
+    .how-we-work-img-container img {
+        width: 38%;
+    }
+    .how-we-work-below {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.9em;
+        line-height: 1.35em;
+        color: black;
+    }
+    .how-we-work-below-content {
+        font-style: normal;
+        font-weight: normal;
+        font-style: 0.7em;
+        line-height: 1.35em;
+        color: black;
+        opacity: 0.7;
+    }
+    .second-section-of-advantages {
+        margin-top: 5em;
+    }
+    .second-section-of-advantages-title {
+        font-style: normal;
+        font-weight: bold;
+        font-style: 1.5em;
+        line-height: 1.35em;
+        text-align: center;
+        color: #233A5C;
+    }
+    .second-section-of-advantages-title-span {
+        color: #0C50FF;
+    }
+    .simple-line {
+        margin-top: 2.5em;
+        width: 10%;
+        border-bottom: 0.3em solid #0C50FF;
+        opacity: 0.3;
+        margin: auto;
+    }
+    .second-section-of-advantages-title p {
+        font-weight: normal;
+        font-size: 1em;
+        color: #233A5C;
+        padding-top: 1em;
+    }
+    .second-section-of-advantages-flex {
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+    .second-section-of-advantages-flex > div {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9em;
+        line-height: 1.35em;
+        color: #273C73;
+        flex: 1.3em;
+    }
+    .second-section-of-advantages-left-section-element, .second-section-of-advantages-right-section-element {
+        padding: 1em 2em;
+        border-radius: 1em;
+        border-radius: 5em;
+        width: 1em;
+        color: white;
+        margin: auto;
+    }
+    .second-section-of-advantages-left-section p {
+        text-align: right;
+    }
+    .second-section-of-advantages-right-section p {
+        text-align: left;
+    }
+    .second-section-of-advantages-right-section-element  {
+        margin: 0em;
+    }
+    .second-section-of-advantages-centre-img {
+        width: 100%;
+        margin: auto;
+        opacity: 0.8;
+        transition: 0.5s linear;
+    }
+    .second-section-of-advantages-centre-img:hover {
+        opacity: 1;
+    }
+    .reviews-about-us-container {
+        margin-top: 5em;
+    }
+    .reviews-about-us-title h3 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.5em;
+        line-height: 1.35em;
+        color: #212121;
+        text-align: center;
+    }
+    .reviews-about-us-title h3 span {
+        color: #0C50FF;        
+    }
+    .reviews-about-us-title hr {
+        margin-top: 0em;
+        padding: 0em;
+        width: 10%;
+        border-bottom: 0.3em solid #0C50FF;
+        border-radius: 1em;
+        opacity: 0.3;
+    }
+    .reviews-about-us-title p {
+        font-style: normal;
+        font-size: 1em;
+        line-height: 1.35em;
+        text-align: center;
+        color: #233A5C;        
+    }
+    .reviews-about-us-section {
+        box-shadow: 0em 0.1em 0.9em 0.1em rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 70%;
+        border-radius: 1em;
+        transition: 0.7s linear;
+        margin-top: 3em;
+    }
+    .reviews-about-us-section:hover {
+        box-shadow: 0em 0.5em 0.9em 0.1em rgba(0, 0, 0, 0.3);
+
+    }
+    .reviews-about-us-section-name {
+        padding-top: 3em;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.1em;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        line-height: 1.35em;
+        color: #0CA7FF;
+        }
+        .reviews-about-us-section-company {
+            padding-top: 0.5em;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.8em;
+            line-height: 1.35em;
+            color: black;
+            opacity: 0.7;
+        }
+        .reviews-about-us-section-content {
+            padding: 2em;
+            margin: auto;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 1.1em;
+            text-align: center;
+            color: black;
+        }
+        .reviews-about-us-section-content span {
+            color: #0C50FF;
+        }
+        .reviews-about-us-section-date {
+            opacity: 0.7;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1em;
+            color: black;
+            padding-bottom: 3em;
+        }
+        .reviews-about-us-pagination {
+            padding-top: 2em;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .reviews-about-us-pagination a {
+            text-decoration: none;
+            color: black;
+            padding: 0.2em 1em 0.2em 1em;
+            transition: 0.5s linear;
+            border-radius: 0.5em;
+        }
+        .reviews-about-us-pagination a:hover {
+            border-radius: 0.5em;
+            background-color: #045de9;
+            background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+            color: white;
+        }
+        .reviews-about-us-pagination-text {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.7em;
+            opacity: 0.7;
+            padding-top: 2em;
+        }
+
+        .collapsibles-container {
+            margin-top: 5em;
+        }
+        .collapsibles-flex {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .collapsibles-flex > div {
+            padding: 1em;
+        }
+        .collapsibles-above {
+            cursor: pointer;
+            padding: 1em;
+            text-align: left;
+            outline: none;
+            font-size: 1.3em;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5em;
+            color: black;
+            transition: 0.4s linear;
+            border-radius: 0.7em;   
+            box-shadow: 0em 0.1em 0.5em 0em rgba(0, 0, 0, 0.1);         
+          }
+          .collapsibles-above:before {
+            content: "\002B";
+            color: black;
+            font-weight: 600;
+            padding-left: 0.5em;
+            padding-right: 1em;
+          }
+          
+          .active, .collapsibles-above:hover {
+            box-shadow: 0em 0.1em 0.5em 0em rgba(0, 0, 0, 0.3);         
+          }
+          .active:before {
+            content: "\2212";          }
+          .collapsibles-above:active {
+            box-shadow: 0em 0.3em 0.5em 0em rgba(0, 0, 0, 0.3);         
+            }
+          
+          .collapsibles-content {
+            padding: 0em 1em;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 1.35em;
+            color: black;
+            opacity: 0.8;
+          }
+
+        .footer {
+            margin-top: 10em;
+        }
+        .footer-flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }        
+        .footer-water-logo {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 1.3em;
+            color: black;            
+        }
+        .footer-water-logo span {
+            color: #0C50FF;
+        }
+        .footer-water-phone {
+            padding-top: 2em;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #0C50FF;
+        }
+        .footer-water-address {
+            padding-top: 2em;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #0C50FF;
+        }
+        .footer-water-navigator > div {
+            margin: 1em;
+        }
+        .footer-water-navigator a {
+            text-decoration: none;
+            color: black;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.1em;
+            line-height: 1.35em;
+            color: black;
+            transition: 0.3s linear;
+            border-radius: 0.5em;
+            padding: 0.3em 1em;
+        }
+        .footer-water-navigator a:hover {
+            background-color: #045de9;
+            background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+            color: white;
+        }
+
+    @media only screen and (max-width: 992px){
+        body {
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
+        .header-container-phone {
+            padding-top: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+            align-content: stretch;
+            color: #FFFFFF;
+            background-color: #2a2a72;    
+        }
+        .header-container-phone > div {
+            flex-direction: 50%;
+        }
+        .header-company-phone-invisible {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding-left: 0em;
+            }
+            .header-company-phone-invisible p {
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.7em;
+            line-height: 1.2em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FFFFFF;
+            opacity: 0.56;
+            }
+            .header-company-sum-invisible {
+                font-style: normal;
+        font-weight: bold;
+        font-size: 1.3em;
+            }
+        .drop-water img {
+            left: 23em;        
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            text-align: center;
+            }    
+            .header-container > div {
+                line-height: 1.2em;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                flex: 1em;
+            }
+                .header-name-company {    
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3em;
+            padding-bottom: 1em;
+            text-align: center;
+            padding-right: 1em;
+        }
+        .drop-water-container {
+            display: none;
+        }
+        .header-navigator {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        .header-navigator > div {
+            flex: 100%;
+        }
+        .header-navigator a {
+            font-size: 2em;
+            line-height: 1.35em;
+            padding-bottom: 1em;
+            width: 100%;
+            margin-right: 0.2em;
+            text-align: center;    
+        }
+        .header-navigator a:hover {
+            font-size: 2em;
+            line-height: 1.35em;
+            padding: 0.5em 0.5em;            
+        }
+        .below-the-header-container-texts h2 {
+            font-weight: 700;
+            font-size: 2em;
+            text-align: center;
+        }
+        .below-the-header-container-texts p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2em;
+        line-height: 1.35em;
+        text-align: center;
+        padding-right: 2em;
+        }
+        .big-water-bottle img {
+            width: 50%;
+            padding-top: 12em;    
+            margin-left: 7em;
+        }
+        .big-water-bottle img:hover {
+            transform: rotate(15deg);
+        }
+        .first-section-of-advantages {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 4em;
+            text-align: center;
+            justify-content:space-around;
+            align-items: stretch;
+        } 
+        .big-water-bottle img {
+            margin-left: 0em;
+        }
+        .big-water-bottle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }    
+        .order-button {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            padding: 1em 0em 1em 0em;
+            font-size: 1.5em;
+            margin-left: 1.7em;
+        }
+        .order-button:hover {
+            transform: scale(0.9);
+    
+        }
+        .order-button {
+            box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        }   
+
+        .below-the-header-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }    
+        .header-company-sum-one {
+            font-size: 5em;
+            visibility: visible;
+        }
+        .header-company-phone {
+            display: none;
+        }
+        .header-company-sum {
+            display: none;
+        }
+        .footer-flex-container {
+            justify-content: space-evenly;
+            align-items: stretch;
+        }   
+        .order-form {
+            margin-top: 4em;
+        }
+        }        
+    
+        @media only screen and (max-width: 768px) {  
+            .drop-water-container {
+                display: none;
+            }    
+            .second-section-of-advantages-centre-img {
+                display: none;
+            }
+    
+        }    
+        @media only screen and (max-width: 992px) {  
+            .drop-water-container {
+                display: none;
+            }  
+            .order-cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .order-cards > div {
+                width: 40%;
+                padding-bottom: 2em;
+            }
+            .product-card:hover {
+                transform: scale(1.04);
+            } 
+            .order-form {
+                padding-top: 1em;
+            }
+            .main-promotions-flex {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .main-promotions-flex > div {
+                width: 90%;
+                padding-left: 0em;
+                padding-bottom: 1.5em;
+            }
+            .promotion-img {
+                width: 20%; 
+                margin: 2em 0em 0em 3em;       
+            }   
+            .about-our-company-img {
+                display: none;
+            }       
+            .about-our-company-container {
+                padding: 0em;
+                margin-top: 3em;
+                margin-left: 7em;
+            }  
+            .about-our-company-title {
+                text-align: center;
+            }
+            .how-we-work-container {
+                padding: 0em;
+                margin-top: 3em;
+            }   
+            .second-section-of-advantages-centre-img {
+                display: none;
+            } 
+        }
+            
+    @media only screen and (min-width: 1200px) {
+        .header-name-company {    
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-left: 1em;
+        }        
+        .header-container > div {
+            line-height: 1.2em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            flex: 1em;
+            }
+        .header-navigator {
+            flex: 1.1em;
+            padding-left: 5.5em;
+        }
+        .header-navigator a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 0em 0.5em 0em 0em;
+            transition: 0.3s linear;
+            padding-left: 1em;
+        }
+        .header-navigator a:hover {
+            font-size: 1.3em;
+            border-radius: 0.3em;
+            box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+            background: rgb(2,0,36);
+            background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+        }
+        .header-navigator a:active {
+            box-shadow: 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+        }
+        .drop-water img:hover {
+            transform: rotate(50deg);
+        }
+        .header-company-phone {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding-left: 0em;
+            }
+            .header-company-phone p {
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 1.2em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FFFFFF;
+            opacity: 0.56;
+            }
+        .header-company-sum{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding-left: 1em;
+        }
+        .first-section-of-advantages {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 4em;
+            text-align: center;
+            justify-content:space-around;
+            align-items: stretch;
+        } 
+        
+        .big-water-bottle img {
+            width: 50%;
+        }
+        .drop-water img {
+            width: 1%;
+            animation-name: drop-water;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            left: 76.5em;
+            opacity: 0;
+            transition: 0.1s linear;
+            transition-property: transform;
+        }
+        
+        @keyframes drop-water {
+            0%   {top:0em;}
+            1% {opacity: 1;}
+            100% {top:20em; opacity: 0}
+        }            
+    }
+
+    @media only screen and (max-width: 1404px) {
+        .second-section-of-advantages-centre-img {
+            width: 110%;
+            margin: auto;
+            opacity: 0.8;
+            transition: 0.5s linear;
+        }  
+    }
+
+    @media only screen and (max-width: 1242px) {
+        .second-section-of-advantages-centre-img {
+            width: 120%;
+            margin: auto;
+            opacity: 0.8;
+            transition: 0.5s linear;
+            padding-right: 2em;
+            margin-top: 2em;
+        }  
+    }
+    @media only screen and (max-width: 1097px) {
+        .second-section-of-advantages-centre-img {
+            margin-top: 4em;
+        }  
+        .about-our-company-img {
+            display: none;
+        }       
+        .about-our-company-container {
+            padding-left: 4em;
+            margin-top: 0em;
+        }      
+        .main-promotions-container {
+            margin-top: 2em;
+        }
+        .main-promotions-header-text {
+            text-align: center;
+        }
+        .how-we-work-title {
+            text-align: center;
+        }
+    
+    }
+
+    @media only screen and (max-width: 910px) {
+        .second-section-of-advantages-centre-img {
+            margin-top: 6em;
+        }  
+        .second-section-of-advantages-flex {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0em;
+        }
+        .second-section-of-advantages-left-section p {
+            text-align: center;
+        }
+        .second-section-of-advantages-right-section p {
+            text-align: center;
+        }
+        .second-section-of-advantages-left-section-element, .second-section-of-advantages-right-section-element {
+            padding: 0;
+            margin: 0;
+        }     
+        .second-section-of-advantages-title p {
+            padding: 0em;
+        }      
+    }   
+
+    @media only screen and (max-width: 1490px) {
+        .how-we-work-flex  {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .how-we-work-flex > div {
+            width: 70%;
+        }
+        .how-we-work-title {
+            text-align: center;
+        }
+        .how-we-work-below {
+            text-align: center;
+        } 
+        .how-we-work-part {
+            margin-top: 2em;
+            padding: 2em;
+        }
+        .second-section-of-advantages-right-section-element-below {
+            margin-top: -0.5em;
+        }
+        .how-we-work-part {
+            box-shadow: 0em 0.2em 0.5em 0.1em rgba(0, 0, 0, 0.2);
+        }
+        .how-we-work-below-content {
+            text-align: center;
+        }
+    }
+   
+   
+      
+
+ 
